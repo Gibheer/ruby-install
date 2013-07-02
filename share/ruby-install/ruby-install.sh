@@ -33,7 +33,7 @@ elif [[ $(type -t md5)    ]]; then MD5SUM="md5"
 fi
 
 #
-# Only use sudo if already root.
+# Only use sudo if not root.
 #
 if [[ $UID -eq "0" ]]; then SUDO=""
 else                        SUDO="sudo"
